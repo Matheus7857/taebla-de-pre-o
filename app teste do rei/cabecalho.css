@@ -1,0 +1,13 @@
+header{
+    background-image: url(img/cabecalho.png);
+    background-repeat: no-reapat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    padding: 7px;
+    width: 100%;
+    width: 1250px;
+    display: flex;
+}

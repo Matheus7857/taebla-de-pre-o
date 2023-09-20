@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta chaset="UFT-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+    <title>projeto javascript</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="cabecalho.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https: //fonts.googleapis.com/css2? family= Merriweather:ital@1 & display=swap" rel="stylesheet">
+
+    <script src="Script.js"></script>
+
+</head>
+<body>
+ 
+    <header>
+
+        <h1>Rei da Mussarela Tabela de Precos</h1>
+
+    </header>
+
+    <main>
+        <div class="titulo">
+            <h2>Produto</h2>
+        </div>
+
+        <div class="card">
+            <div class="lineInput">
+                <label>Produto</label>
+                <input type="text" id="produtos" placeholder="nome do produto">
+            </div>
+
+                <div class="lineInput">
+                    <label>Valor</label>
+                    <input type="text" id="preco" placeholder="preco do produto">
+                </div>
+
+                <div class="lineInput">
+                    <label>quantidade</label>
+                    <input type="text" id="quantidade" placeholder="quantidade">
+                </div>
+
+
+            <Button onclick="produto.Salvar()">Salvar</Button>
+            <button onclick="produto.Cancelar()">Cancelar</button>
+
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">id</th>
+                    <th>Produtos</th>
+                    <th>Valor</th>
+                    <th>quantidade</th>
+                    <th>acoes</th>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+
+
+        </div>
+    </main>
+
+
+</body>
+</html>

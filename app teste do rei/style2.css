@@ -1,0 +1,122 @@
+body {
+    background-image: url(img/logo\ \(1\).png);
+    background-repeat: no-reapat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left.login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.left-login > h1 {
+     color: #fff8f8;
+     width: 20vw;
+     height: 20vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.left-login-imagem{
+    width: 50px;
+    height: 30vh;
+    display: flex;
+    justify-content: left center;
+    align-items: left center;
+}
+
+
+.right-login{
+    width: 150vw;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-login{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+    background: #ff0000;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #000000;
+}
+.card-login > h1 {
+    color: #ffffff;
+    font-weight: 1500;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #fbff00;
+    font-size: 12pt;
+    box-shadow:0px 10px 40px #000000;
+    outline: none;
+    box-sizing: border-box;
+}
+.textfield > label {
+    color:#000000;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder{
+    color: #616159
+}
+
+
+div.container{
+    width: 100%;
+    height: 50h;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+input[type="submit"]{
+     padding: 15px 15px;
+     font-size: 15px;
+     background-color: #d9ff00;
+     border: 1px solid #fbff00;
+     border-radius: 15px;
+     cursor: progress;
+     color: rgb(0, 0, 0);
+     width: 18%;
+     height: 5vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 20px 0px;
+     font-weight: 600;
+
+}
