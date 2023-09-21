@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+:root {
+    --main-color: #0026ff;
+    --link-color: #666666;
+    --text1: #999999;
+    --highlight-text: #333333;
+    --input-text: #555555;
+    --white-color:#fff;
+    --points-list: #cccccc;
+    --line-input: #d9d9d9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+}
+
+ul, li {
+    margin: 0;
+    list-style-type: none;
+}
+
+input, button{
+    outline: none !important;
+    border: none;
+
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.text1 {
+    font-size: 15px;
+    color: var(--text1);
+    line-height: 1.5;
+}
+
+.text2 {
+    font-size: 15px;
+    color: var(--main-color);
+    line-height: 1.5;
+}
+
+.margin-bottom-35 {
+    margin-bottom: 35px;
+}
+
+.margin-bottom-35 {
+    margin-top: 35px;
+}
+.margin-bottom-8 {
+    margin-bottom: 8px;
+}
+
+.margin-top-8 {
+    margin-top: 10px;
+}
+
+margin-left-50 {
+    margin-left: 50px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-login {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center center;
+    padding: 15px;
+    background-color: white;
+}
+
+.wrap-login {
+    width: 370px;
+    margin-right: 50px;
+    background-color: white;
+}
+
+.login-form {
+    width: 100;
+}
+
+.login-form-title {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 39px;
+    color: var(--highlight-text);
+    line-height: 1.2;
+    text-align: center;
+}
+
+.wrap-input {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid var(--line-input);
+}
+
+.input-form {
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    color: var(--input-text);
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 52px;
+    background: transparent;
+    padding: 0 5px;
+
+}
+
+.focus-input-form {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.focus-input-form::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.4s;
+    background-color: var(--main-color);
+}
+
+.focus-input-form::after{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: var(--text1);
+    line-height: 1.2;
+    content: attr(data-placeholder);
+    display: block;
+    width: 100;
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    padding: 5px;
+    transition: all 0.4s;
+}
+
+.input-form:focus + .focus-input-form::after{
+    top: -20px;
+    font-size: 15px;
+
+}
+
+.input-form:focus + .focus-input-form:before{
+    top: -20px;
+    
+}
+
+.has-val.input-form:focus + .focus-input-form::after{
+    top: -20px;
+    font-size: 15px;
+
+}
+
+.has-val.input-form:focus + .focus-input-form:before{
+    top: -20px;
+    
+}
+
+
+/*
+Botao
+*/
+.container-login-form-bnt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.conrainer-login-form-bnt{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: var(--white-color);
+    line-height: 1.2;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-color);
+    border-radius: 4px;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+.conrainer-login-form-bnt:hover {
+    background-color: var(--highlight-text);
+
+}
+
+a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--link-color);
+    margin: 0px;
+    transition: all 0.4s;
+}
+a:focus {
+    outline: none !important;
+}
+a:hover {
+    text-decoration: none;
+    color: var(--highlight-text);
+}
+
+.login-utils {
+    margin-top: 20px;
+
+}
+
+.login-utils li {
+    position: relative;
+    padding-left: 20px;
+
+}
+
+.login-utils li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: -2px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--points-list);
+    top: 50%;
+    transform: translateY(-50%);
+
+}
